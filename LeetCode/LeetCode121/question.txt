@@ -27,10 +27,5 @@ Output: 4
 
 Constraints:
 
-<<<<<<< HEAD
-1 <= k <= nums.length <= 105
--104 <= nums[i] <= 104
-=======
 1 <= prices.length <= 105
 0 <= prices[i] <= 104
->>>>>>> 33267947d0df9a6af013cabd31527844d5939c15
