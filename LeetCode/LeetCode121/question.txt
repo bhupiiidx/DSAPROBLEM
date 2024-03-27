@@ -1,4 +1,6 @@
-                                        121. Kth Largest Element in an Array
+                                        121. Best Time to Buy and Sell Stock 
+Path:
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 Level:
     Medium
 Topics
@@ -25,5 +27,10 @@ Output: 4
 
 Constraints:
 
+<<<<<<< HEAD
 1 <= k <= nums.length <= 105
 -104 <= nums[i] <= 104
+=======
+1 <= prices.length <= 105
+0 <= prices[i] <= 104
+>>>>>>> 33267947d0df9a6af013cabd31527844d5939c15
