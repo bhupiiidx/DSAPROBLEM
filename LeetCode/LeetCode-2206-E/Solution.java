@@ -1,5 +1,3 @@
-package LeetCode.LeetCode2206;
-
 class Solution {
     boolean divideArray(int[] nums) {
         int[] tempArr = new int[nums.length / 2];
