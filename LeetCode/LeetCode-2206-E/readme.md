@@ -1,36 +1,38 @@
-                                        2206. Divide Array Into Equal Pairs
-Path:-
+#                                        2206. Divide Array Into Equal Pairs
+## Path
 https://leetcode.com/problems/divide-array-into-equal-pairs/description/
 
-Level:-
+## Level
     Easy
-Topics:-
+## Topics
     Array, Hash Table, Bit Manipulation, Counting
 
-Question:-
-You are given an integer array nums consisting of 2 * n integers.
+## Question:-
+    You are given an integer array nums consisting of 2 * n integers.
 
-You need to divide nums into n pairs such that:
+    You need to divide nums into n pairs such that:
+    
+    Each element belongs to exactly one pair.
+    The elements present in a pair are equal.
+    Return true if nums can be divided into n pairs, otherwise return false.
 
-Each element belongs to exactly one pair.
-The elements present in a pair are equal.
-Return true if nums can be divided into n pairs, otherwise return false.
+## Examples
 
-Example 1:
-Input: nums = [3,2,3,2,2,2]
-Output: true
-Explanation: 
-There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs.
-If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.
+### Example 1:
+    Input: nums = [3,2,3,2,2,2]
+    Output: true
+    Explanation: 
+    There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs.
+    If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.
 
 
-Example 2:
-Input: nums = [1,2,3,4]
-Output: false
-Explanation: 
-There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.
+### Example 2:
+    Input: nums = [1,2,3,4]
+    Output: false
+    Explanation: 
+    There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.
  
 
-Constraints:
-1 <= nums.length <= 1000
--10^6 <= nums[i] <= 10^6
+## Constraints:
+    1 <= nums.length <= 1000
+    -10^6 <= nums[i] <= 10^6
