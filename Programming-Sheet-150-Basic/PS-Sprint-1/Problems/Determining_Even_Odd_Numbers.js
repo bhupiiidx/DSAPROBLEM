@@ -6,12 +6,13 @@
 //    Input: `number = 4`  
 //    Output: `Even`  
 //    Explanation: Since 4 is divisible by 2, it is an even number. 
+const prompt = require("prompt-sync")()
+var number = prompt("Enter Number :- ")
 
 function checkEvenOdd(num) {
     return num % 2 === 0 ? 'Even' : 'Odd';
 };
 
-var number = prompt("Enter Number :- ")
 if (isNaN(number)) {
     console.log("Enter Valid Number")
 } else {
