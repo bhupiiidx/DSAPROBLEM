@@ -44,7 +44,70 @@ function craftingPyramid(height) {
 
     }
 }
+function craftingDiamond_Pattern1(height) {
+    // Diamond Top - Pyramid
+    for (let row = 0; row < height; row++) {
+        let str = "";
+        for (let column = 0; column < height - row - 1; column++) str += "- "
+        for (let column = 0; column < (row * 2) + 1; column++) str += "* "
+        console.log(str);
+    }
+    // Diamond Bottom - Pyramid
+    for (let row = 0; row < height - 1; row++) {
+        let str = "";
+        for (let column = 0; column < row + 1; column++) str += "- "
+        for (let column = (((height - row - 1)) * 2) - 1; column > 0; column--) str += "* "
+        console.log(str);
+    }
+}
+
+function craftingDiamond_Pattern2(height) {
+    // Diamond Top - Pyramid
+    for (let row = 0; row < height; row++) {
+        let str = "";
+        for (let column = 0; column < height - row - 1; column++) str += "- "
+        for (let column = 0; column < (row * 2) + 1; column++) str += "* "
+        console.log(str);
+    }
+    // Diamond Bottom - Pyramid
+    for (let row = 0; row < height; row++) {
+        let str = "";
+        for (let column = 0; column < row; column++) str += "- "
+        for (let column = (((height - row)) * 2) - 1; column > 0; column--) str += "* "
+        console.log(str);
+    }
+}
 
 
 // ? Pyramid of height 5
+// - - - - * 
+// - - - * * * 
+// - - * * * * * 
+// - * * * * * * * 
+// * * * * * * * * * 
 craftingPyramid(5)
+console.log("---------------------------------")
+// ? Diamond of height 5
+// - - - - * 
+// - - - * * * 
+// - - * * * * * 
+// - * * * * * * * 
+// * * * * * * * * * 
+// - * * * * * * * 
+// - - * * * * * 
+// - - - * * * 
+// - - - - * 
+craftingDiamond_Pattern1(5)
+console.log("---------------------------------")
+// ? Diamond of height 5
+// - - - - * 
+// - - - * * * 
+// - - * * * * * 
+// - * * * * * * * 
+// * * * * * * * * * 
+// * * * * * * * * * 
+// - * * * * * * * 
+// - - * * * * * 
+// - - - * * * 
+// - - - - * 
+craftingDiamond_Pattern2(5)
