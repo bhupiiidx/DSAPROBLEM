@@ -10,11 +10,11 @@
 const prompt = require("prompt-sync")();
 var promptNumber = prompt("Enter Number To Calculate Factorial:- ");
 
-function findFactorial(num){
-    if(num <= 1) return num;
+function findFactorial(num) {
+    if (num <= 1) return num;
     let factorial = 1;
     let index = 1;
-    while(index <= num){
+    while (index <= num) {
         factorial *= index;
         index++
     }
